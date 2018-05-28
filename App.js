@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {
     View,
-    Text, StyleSheet
+    StyleSheet
 } from 'react-native';
 
 
@@ -9,32 +9,25 @@ export default class App extends Component {
     render() {
         return (
             <View style={ao.bao}>
-                <Text style={ao.tieude}>
-                    Hello React Native
-                </Text>
-                <Text style={ao.ten}>
-                    My name is Novakiss
-                </Text>
+                <View style={ao.teo}></View>
+                <View style={ao.ti}></View>
             </View>
         );
     }
 }
 
 const ao = StyleSheet.create({
-    bao:{
-        backgroundColor: 'pink',
-        width:200,
-        height:300,
-        marginTop:50,
-        marginLeft:100,
-        paddingTop:30
+    bao: {
+        backgroundColor: 'black',
+        flex: 1, //ti le no se bao trum kin man hinh
+        flexDirection: "row"
     },
-    tieude: {
+    teo: {
+        backgroundColor: 'red',
+        flex: 3
+    },
+    ti: {
         backgroundColor: 'yellow',
-        color: 'red'
-    },
-    ten: {
-        backgroundColor: 'green',
-        color: 'yellow'
+        flex: 2
     }
 });
