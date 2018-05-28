@@ -8,7 +8,7 @@ import {
 export default class App extends Component {
     render() {
         return (
-            <View>
+            <View style={ao.bao}>
                 <Text style={ao.tieude}>
                     Hello React Native
                 </Text>
@@ -21,6 +21,14 @@ export default class App extends Component {
 }
 
 const ao = StyleSheet.create({
+    bao:{
+        backgroundColor: 'pink',
+        width:200,
+        height:300,
+        marginTop:50,
+        marginLeft:100,
+        paddingTop:30
+    },
     tieude: {
         backgroundColor: 'yellow',
         color: 'red'
