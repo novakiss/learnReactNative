@@ -1,18 +1,21 @@
 import React, {Component} from 'react';
 import {
-    View,
+    View,TouchableOpacity,Text
 } from 'react-native';
-
-import KhachHang from './src/components/KhachHang'
 
 
 export default class App extends Component{
+    clickMe=()=>{
+      console.log('Clicked')
+    };
     render() {
         return (
             <View>
-                <KhachHang name="Name 1"/>
-                <KhachHang name="Name 2"/>
-                <KhachHang/>
+                <TouchableOpacity onPress={this.clickMe}>
+                <View style={{backgroundColor:'green',width:100,height:20,marginTop:100,marginLeft:20}}>
+                    <Text>Click Me</Text>
+                </View>
+                </TouchableOpacity>
             </View>
         );
     }
