@@ -1,18 +1,18 @@
 import React, {Component} from 'react';
 import {
     View,
-    Text
 } from 'react-native';
 
+import KhachHang from './src/components/KhachHang'
 
 
 export default class App extends Component{
     render() {
         return (
             <View>
-                <Text style={{marginTop:100}}>
-                    Hello React Native
-                </Text>
+                <KhachHang name="Name 1"/>
+                <KhachHang name="Name 2"/>
+                <KhachHang/>
             </View>
         );
     }
